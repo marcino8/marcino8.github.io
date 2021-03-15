@@ -17,7 +17,7 @@ p{
   text-align: left;
   vertical-align: text-bottom;
   grid-area: header;
-  background-color: #0B4F6C;
+  background-color: #AAAAAA;
   font-family: Verdana;
   font-size: 48px;
   padding-left: 10px;
@@ -29,11 +29,12 @@ p{
 
 
 .Zdj {
+	padding-top: 35px;
 	display: flex;
 	justify-content: center;
   	grid-column: 1;
 	grid-row: header_puste / info2;
-	background-color: #A7AAA4;
+	background-color: #585B56;
 }
 
 .Zdj > img {
@@ -101,7 +102,7 @@ p{
   text-align: center;
   grid-column: 1;
   grid-row: info3 / info_p4;
-  background-color: #A7AAA4;
+  background-color: #585B56;
 }
 
 
