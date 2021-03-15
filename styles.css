@@ -1,22 +1,130 @@
-.item-a {
+
+h1 {
+	font-family: Impact, sans-serif;
+	color: #1C2826;
+	border-bottom: 3px solid #000000;
+}
+
+h2{
+	font-family: Impact, sans-serif;
+	color: #1C2826;
+}
+
+p{
+	padding-right: 10px;
+}
+.ImieNazwisko {
+  text-align: left;
+  vertical-align: text-bottom;
   grid-area: header;
+  background-color: #0B4F6C;
+  font-family: Verdana;
+  font-size: 48px;
+  padding-left: 10px;
 }
-.item-b {
-  grid-area: main;
+
+.header_puste {
+  background-color: blue;
 }
-.item-c {
-  grid-area: sidebar;
+
+
+.Zdj {
+	display: flex;
+	justify-content: center;
+  	grid-column: 1;
+	grid-row: header_puste / info2;
+	background-color: #A7AAA4;
 }
-.item-d {
-  grid-area: footer;
+
+.Zdj > img {
+	max-width: 70%;
+	height: auto;
 }
+
+.podsumowanie1 {
+  grid-area: podsumowanie_h;
+  background-color: #CED0CE;
+  padding-left: 10px;
+}
+
+.podsumowanie2 {
+  grid-area: podsumowanie_t;
+  background-color: #CED0CE;
+  padding-left: 10px;
+}
+
+.doswiadczenie1 {
+  grid-area: doswiadczenie_h;
+  background-color: #CED0CE;
+  padding-left: 10px;
+}
+
+.flexd{
+	display: flex;
+	justify-content: space-between;
+	border-block-end: 1px solid #000000;
+}
+	
+
+.doswiadczenie2 {
+
+  grid-area: doswiadczenie_t;
+  background-color: #CED0CE;
+   padding-left: 10px;
+}
+
+.wyksztalcenie1 {
+  grid-area: wyksztalcenie_h;
+  background-color: #CED0CE;
+  padding-left: 10px;
+}
+
+.wyksztalcenie2 {
+  grid-area: wyksztalcenie_t;
+  background-color: #CED0CE;
+  padding-left: 10px;
+}
+
+.umiejetnosci1 {
+  grid-area: umiejetnosci_h;
+  background-color: #CED0CE;
+  padding-left: 10px;
+}
+
+.umiejetnosci2 {
+  grid-area: umiejetnosci_t;
+  background-color: #CED0CE;
+  padding-left: 10px;
+}
+
+.informacje1 {
+  text-align: center;
+  grid-column: 1;
+  grid-row: info3 / info_p4;
+  background-color: #A7AAA4;
+}
+
+
+
 
 .container {
   display: grid;
-  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-columns: [col1-start]20% [col1-end col2-start]50% [col2-end];
   grid-template-rows: auto;
-  grid-template-areas: 
-    "header header header header"
-    "main main . sidebar"
-    "footer footer footer footer";
+  grid-template-areas:
+    "header_puste header"
+    "zdjecie podsumowanie_h"
+    "info1 podsumowanie_t"
+    "info2 doswiadczenie_h"
+    "info3 doswiadczenie_t"
+    "info_p1 wyksztalcenie_h"
+    "info_p2 wyksztalcenie_t"
+    "info_p3 umiejetnosci_h"
+    "info_p4 umiejetnosci_t";
+	font-family: Verdana;
+	
+}
+
+ul {
+	list-style-type: disc;
 }
