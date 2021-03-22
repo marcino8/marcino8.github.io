@@ -1,0 +1,223 @@
+body {
+    display: grid;
+    background: white;
+  }
+.logo > img {
+	width: 276px;
+	height: 243px;
+}
+
+.page {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    font-size: 14px;
+    font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+
+.gora {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 4px 15px;
+}
+.kropki{
+	width: 23px;
+	height: 23px;
+}
+
+.gora a:hover{
+	text-decoration:underline;
+}
+.gmail, .grafika, .kropki{
+    font-size: 13px;
+    margin-right: 15px;
+    color: #222;
+	cursor: pointer;
+}
+
+.przycisk1{
+    display: inline-block;
+    color: white;
+    background: #1a73e8;
+    border: 1px solid transparent;
+    margin-left: 5px;
+    font-size: 14px;
+    letter-spacing: .25px;
+    line-height: 8px;
+    padding: 13px 24px;
+    text-align: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+	cursor: pointer;
+}
+.log{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+.searchbar {
+    display: block;
+    grid-template-rows: 50% 50%;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: center;
+}
+.wyszukiwanie{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+	background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+}
+.poletekstowe{    
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    -webkit-tap-highlight-color: transparent;
+    height: 34px;
+	width: 450px;
+    font-size: 16px;
+}
+.imglupa{
+	margin-left: 22px;
+}
+.mikro{
+	margin-right: 22px;
+}
+.przyciski{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+	
+}
+.przycisk2, .przycisk3{
+	border-radius: 4px;
+    font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .25px;
+    min-width: 80px;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: inline-block;
+    margin: 8px;
+    color: #222;
+    background: #f8f8f8;
+    border: 1px solid transparent;
+    align-content: center;
+    padding: 8px 16px 8px;
+	cursor: pointer;
+	margin-top: 22px;
+}
+
+footer {
+	text-decoration: none;
+	background: #f2f2f2;
+	 position:absolute;
+   bottom:0;
+   width:100%;
+}
+.Polska{
+	padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+}
+
+footer a {
+	cursor: pointer;
+	color: rgba(0,0,0, 0.54);
+	display: inline-block;
+	padding: 12px 11.3px;
+	font-size: 14px;
+	
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+.reflinki {
+	border-top: 1px solid #ddd;
+	display: flex;
+	color: #70757a;
+	padding: 5px 0px;
+}
+
+.linki1 {
+	padding-left: 18.7px;
+	flex: 1;
+	justify-content: flex-start;
+    min-width: 40%;
+    order: 1;
+}
+
+.listek {
+	padding-left: 18.7px;
+	text-align:center;
+}
+
+.listek .leaf {
+	height: 15px;
+	padding-right: 5px;
+	padding-top: 3px;
+	
+}
+
+.linki2 {
+	padding-right: 18.7px;
+	order: 3;
+	justify-content: flex-end;
+	text-decoration: none;
+}
+.liscimage {
+    height: 11px;
+    margin-right: 6px;
+}
+input{
+	-webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
