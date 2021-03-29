@@ -58,7 +58,7 @@ body {
     justify-content: center;
     min-height: 200px;
 }
-.searchbar {
+.mainpage .searchbar {
     display: block;
     grid-template-rows: 50% 50%;
     position: relative;
