@@ -1,311 +1,256 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-		<link rel="stylesheet" href="styles2.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@900&display=swap">    
-        <link rel="icon" href="logotop.png">
+    <head lang="pl">
+        <meta charset="UTF-8">
         <title>Google</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <link rel="icon" href="logotop.png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles2.css">
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+		<script src="vue.js" defer></script>
+		<script src="https://kit.fontawesome.com/ffc589d0fc.js" crossorigin="anonymous"></script>
     </head>
-	<body class="results">
-    <header>
-        <div class="h-flex-cont">
-                <div class="searchbar">
-                <div class="wyszukiwanie">
-                    <img class="imglupa" src="lupa.png">
-                    <input class="poletekstowe" type="search" title="Szukaj">
-                    <img class="mikro" src="bartools.png" title="Wyszukaj głosem"><br>
-                </div>
-                </div>
-            <section class="h-flex-item app">
-                <a class="app" title="Aplikacje Google" href="#"
-                    aria-label="Aplikacje Google"><img class="app" src="app.png" /></a>
 
-                <a class="blue-button"
-                    href="#">Zaloguj się</a>
-            </section>
-        </div>
-        <div class="navigation">
-            <section class="referance active">Wszystko</section>
-            <section class="referance">Grafika</section>
-            <section class="referance">Mapy</section>
-            <section class="referance">Wiadomości</section>
-            <section class="referance">Wideo</section>
-            <section class="referance">Więcej</section>
-            <section class="referance">Ustawienia</section>
-            <section class="referance">Narzędzia</section>
-
-        </div>
-    </header>
-
-    <main>
-        <div class="m-flex-cont">
-            <div class="searches-time">Około 34 800 000 wyników (0,45 s)</div>
-            <section class="m-flex-item"><img class="googleLogo" 
-                        src="logo.png" >
-			</section>
-        </div>
-        <div class="listing">
-            <div class="searches">
-                <div class="basic">
-                    <a href="#" class="URL">
-                        <div>
-                            <span class="top_URL"><span class="dark_URL">context.reverso.net › tłumaczenie › polski-angielski › ja..</span><span
-                                    class="light_URL"> > advanced > good-titles-snippets </span><span
-                                    class="triangle"></span></span>
-                            <br />
-                            <h1 class="original_link visited">jakiś wynik - Tłumaczenie na angielski - polskich przykładów ...
-                            </h1>
-                        </div>
-                    </a>
-                    <div class="content">
-                        <span>Tłumaczenia w kontekście hasła <em>"jakiś wynik"</em> z polskiego na angielski od Reverso Context: Subs Zderzak - Bump subs, aby osiągnąć <em>jakiś wynik</em>.
-                        </span>
-                    </div>
-                </div>
-                <div class="basic">
-                    <a href="#" class="URL">
-                        <div>
-                            <span class="top_URL"><span class="dark_URL">context.reverso.net › tłumaczenie › polski-angielski › ja..</span><span
-                                    class="light_URL"> > advanced > good-titles-snippets </span><span
-                                    class="triangle"></span></span>
-                            <br />
-                            <h1 class="original_link visited">Jakiś wynik - Tłumaczenie na angielski - polskich przykładów ...
-                            </h1>
-                        </div>
-                    </a>
-                    <div class="content">
-                        <span>połowa/pełny czas - typujesz <em>jaki wynik</em> będzie po pierwszej połowie spotkania i po jego zakończeniu: half/full time - you type what score will be after the first half ...
-
-                        </span>
-                    </div>
-                </div>
-                <div class="basic">
-                    <a href="#" class="URL">
-                        <div>
-                            <span class="top_URL"><span class="dark_URL">pl.wiktionary.org › wiki › wynik</span><span
-                                    class="light_URL"> > advanced > good-titles-snippets </span><span
-                                    class="triangle"></span></span>
-                            <br />
-                            <h1 class="original_link visited">wynik – Wikisłownik, wolny słownik wielojęzyczny
-                            </h1>
-                        </div>
-                    </a>
-                    <div class="content">
-                        <span>przykłady: (1.2) Tylko 7 jest <em>wynikiem</em> tego działania. (1.3) <em>Jaki</em> jest <em>wynik</em>? Nadal remis 0:0? (1.3) Pijany komentator przegapił bramkę dla Polski i do końca ...
-                        </span>
-                    </div>
-                </div>
-                <div class="basic">
-                    <a href="#" class="URL">
-                        <div>
-                            <span class="top_URL"><span class="dark_URL">www.gov.pl › web › koronawirus › powiadomienia-sm...</span><span
-                                    class="light_URL"> > advanced > good-titles-snippets </span><span
-                                    class="triangle"></span></span>
-                            <br />
-                            <h1 class="original_link visited">Powiadomienia SMS o wyniku testu na COVID-19. Zajrzyj na ...
-                            </h1>
-                        </div>
-                    </a>
-                    <div class="content">
-                        <span><span class="date">18 lis 2020 - </span>Jeśli korzystasz z IKP i uzupełniłeś na koncie swój nr telefonu komórkowego – zaraz po tym, jak w systemie EWP pojawi się <em>wynik</em> Twojego testu ...
-                        </span>
-                    </div>
-                </div>
-                <div class="basic">
-                    <a href="#" class="URL">
-                        <div>
-                            <span class="top_URL"><span class="dark_URL">www.gov.pl › web › rpp › gdzie-jeszcze-poza-interneto...</span><span
-                                    class="light_URL"> > advanced > good-titles-snippets </span><span
-                                    class="triangle"></span></span>
-                            <br />
-                            <h1 class="original_link visited">Gdzie jeszcze poza Internetowym Kontem Pacjenta mogę ...
-                            </h1>
-                        </div>
-                    </a>
-                    <div class="content">
-                        <span><span class="date"></span>Gdzie jeszcze poza Internetowym Kontem Pacjenta mogę sprawdzić <em>wynik</em> testu na obecność koronawirusa. Informację o wyniku wykonanego badania na ...
-                        </span>
-                    </div>
-                </div>
-                <div class="basic">
-                    <a href="#" class="URL">
-                        <div>
-                            <span class="top_URL"><span class="dark_URL">eurosport.tvn24.pl › pilka-nozna,105 › polska-andora-...</span><span
-                                    class="light_URL"> > advanced > good-titles-snippets </span><span
-                                    class="triangle"></span></span>
-                            <br />
-                            <h1 class="original_link visited">Polska - Andora: wynik na żywo i relacja live - Eliminacje MŚ ...
-                            </h1>
-                        </div>
-                    </a>
-                    <div class="content">
-                        <span><span class="date">1 dzień temu - </span>Każdy inny <em>wynik</em> niż okazałe zwycięstwo Polski będzie w niedzielę... czytaj dalej » ... &quot;Miała być zabawa, a był <em>jakiś</em> koszmar&quot;.
-
-                        </span>
-                    </div>
-                </div>
-                <div class="basic">
-                    <a href="#" class="URL">
-                        <div>
-                            <span class="top_URL"><span class="dark_URL">pacjent.gov.pl › Aktualności</span><span
-                                    class="light_URL"> > advanced > good-titles-snippets </span><span
-                                    class="triangle"></span></span>
-                            <br />
-                            <h1 class="original_link visited">IKP nie tylko w czasie pandemii | Pacjent - Pacjent.gov.pl
-                            </h1>
-                        </div>
-                    </a>
-                    <div class="content">
-                        <span>Dowiedz się, <em>jaki</em> jest <em>wynik</em> Twojego testu na koronawirusa i ile dni będziesz na ... Internetowym Koncie Pacjenta masz już informację o <em>wyniku</em> Twojego testu.
-                        </span>
-                    </div>
-                </div>
+	<body>
+	<div id="app" :class="[googleSearch != '' ? 'results' : 'home']"> 
+      <nav>
+      	<a href="#">Gmail</a>
+      	<a href="#">Grafika</a>		
+		<img  src="app.png" style="width: 40px;">
+		<span>
+		<a href="#" class="login">
+			<button>Zaloguj się 
+			</button>
+		<a href="#">
+		</span>
+      </nav>
+      <section class="section-1">
+      	<img src="logo.png" class="logo">
+      	<form><br><br>
+      		<div class="search-box">
+      			<img src="lupa.png" class="search-icon">
+      			<input v-model="googleSearch" type="text" class="search-input">
+				<img src="bartools.png" class="keyboard-icon">		
+      			<img src="mic.png" class="voice-icon">
+      			<input type="submit" class="search-btn" value="Szukaj w google">
+      			<input type="submit" class="search-btn" value="Szczęśliwy traf">
+      		</div>
+      	</form>
+      	<div class="lang">
+      		<span>Korzystaj z Google w tych językach:</span>
+      		<a href="#">English</a>
+      	</div>
+      </section>
+      <footer>
+      	<h4>Polska</h4>
+      	<div class="links">
+      		<div class="link-1">
+      			<a href="#">O nas</a>
+      			<a href="#">Reklamuj się</a>
+      			<a href="#">Dla firm</a>
+      			<a href="#">Jak działa wyszukiwarka</a>				
+				<a href="#">
+					<span style="margin-left: 70px;">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" style="width:12px;"/>
+					Neutralność węglowa od 2007 roku
+					</span>
+				</a>				
+      		</div>
+      		<div class="link-2">
+      			<a href="#">Prywatność</a>
+      			<a href="#">Warunki</a>
+      			<a href="#">Ustawienia</a>
+      		</div>
+      	</div>
+      </footer>
+	  
+	  
+	  
+	  <!-- WYNIKI -->	  
+	  
+	  <div id="header">
+        <div id="topbar">
+            <img id="searchbarimage" src="logo.png" />
+            <div id="searchbar" type="text">
+                <input id="searchbartext" type="text"/>
+			
+				
+				<button id="searchbarx">
+					<span id="searchbarborder">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtAJA0oIsYgdH30wmsfIJw7wbuG-dFHwKZMg&usqp=CAU" style="height=10px;width=10px;">                   
+					</span>
+                 </button>
+                
+			
+			
+                <button id="searchbarkeyboard">
+                    <img src="bartools.png" />
+                </button>
+				<button id="searchbarmic" style="background-color: white;">
+                    <img src="mic.png" />
+                </button>
+                <button id="searchbarbutton">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                        </path>
+                    </svg>
+                </button>
             </div>
-            <div class="similar">
-                <h3>Podobne wyszukiwania</h3>
-                <div class="flex-container">
-                    <div class="cont_central">
-                        <a href="#">
-                            <img class="inputIcon SearchIcon" src="LUPA1.png" />
-                            <span><b>cos innego</b></span>
-                        </a>
-                        <a href="#">
-                            <img class="inputIcon SearchIcon" src="LUPA1.png" />
-                            <span><b>cos innego</b></span>
-                        </a>
-                        <a href="#">
-                            <img class="inputIcon SearchIcon" src="LUPA1.png" />
-                            <span><b>cos innego</b></span>
-                        </a>
-                        <a href="#">
-                            <img class="inputIcon SearchIcon" src="LUPA1.png" />
-                            <span><b>cos innego</b></span>
-                        </a>
-                    </div>
-                    
-                    <div class="cont_central">
-                        <a href="#">
-                            <img class="inputIcon SearchIcon" src="LUPA1.png" />
-                            <span><b>cos innego2</b></span>
-                        </a>
-                        <a href="#">
-                            <img class="inputIcon SearchIcon" src="LUPA1.png" />
-                            <span><b>cos innego2</b></span>
-                        </a>
-                        <a href="#">
-                            <img class="inputIcon SearchIcon" src="LUPA1.png" />
-                            <span><b>cos innego2</b></span>
-                        </a>
-                        <a href="#">
-                            <img class="inputIcon SearchIcon" src="LUPA1.png" />
-                            <span><b>cos innego2</b></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-			<div class="golGoogle">
-			<ul class="googlelist">
-				<table>
-					<tr>
-					<td><span class="light">&lt;</span></td>
-					<td><span class="light"> </span></td>
-					<td><span class="blue">G</span></td>
-					<td><span class="red">o</span></td>
-					<td><span class="yellow">o</span></td>
-					<td><span class="yellow">o</span></td>
-					<td><span class="yellow">o</span></td>
-					<td><span class="yellow">o</span></td>
-					<td><span class="yellow">o</span></td>
-					<td><span class="yellow">o</span></td>
-					<td><span class="yellow">o</span></td>
-					<td><span class="yellow">o</span></td>
-					<td><span class="blue">g</span></td>
-					<td><span class="green">l</span></td>
-					<td><span class="red">e</span></td>
-					<td><span class="light">&gt;</span></td>
-					<td rowspan="2" style="width: 20px"></td>
-					<td><span class="blue"><i class="fas fa-angle-right"></i></span></td>
-					</tr>
-					<tr>
-					<td class="numer"></td>
-					<td class="numer">1</td>
-					<td class="numer">2</td>
-					<td class="numer">3</td>
-					<td class="numer">4</td>
-					<td class="numer">5</td>
-					<td class="numer">6</td>
-					<td class="numer">7</td>
-					<td class="numer">8</td>
-					<td class="numer">9</td>
-					<td class="numer">"."</td>
-					<td class="numer">"."</td>
-					<td class="numer">"."</td>
-					</tr>
-				</table>
+			
+			
+
+         <img class="menu" src="app.png"/>	
+		<button class="login-button">Zaloguj się</button>
+        </div>
+        <div id="optionsbar">
+            <ul class="optionsmenu1">
+                <li class="optionsmenuactive"><i class="fa fa-search"></i> Wszystko</li>
+                <li><i class="far fa-image" style="color: #5f6368;"></i> Grafika</li>
+                <li><i class="far fa-play-circle" style="color: #5f6368;"></i> Wideo</li>
+                <li><i class="fa fa-newspaper-o" style="color: #5f6368;"></i> Wiadomości</li>
+                <li><i class="fa fa-map-marker-alt" style="color: #5f6368;"></i></i> Mapy</li>
+                <li><i class="fas fa-ellipsis-v"style="color: #5f6368;"></i> Więcej</li>
             </ul>
-			</div>
-             
-        </div>
-    </main>
-    <footer class="bottomest">
-	
-        <div class="bottom">
-            <div class="locate">Polska<span class="location">
-				<span class="dot"></span>
-				<b> 12-234, Kraków</b> 
-				- Z Twojego adresu internetowego - 
-				<a href="#">Użyj dokładnej lokalizacji</a> - <a href="#">Dowiedz się więcej</a>
-				</span><
-			</div>
-        </div>
-    </footer>
-</body>
-    <div class ="mainpage">
-        <div class="page">
-            <div class="gora">
-                <a class="gmail">Gmail</a>
-                <a class="grafika">Grafika</a>
-                <div class="kropki"><image src="app.png" title="Aplikacje Google"></div>
-                <button class="przycisk1">Zaloguj się</button>
-            </div>
-            <div class="log">
-                <div class="logo">
-                    <image src="logo.png">
-                </div>
-            </div>
-            <div class="searchbar">
-                <div class="wyszukiwanie">
-                    <img class="imglupa" src="lupa.png">
-                    <input class="poletekstowe" type="search" title="Szukaj">
-                    <img class="mikro" src="bartools.png" title="Wyszukaj głosem"><br>
-                </div>
-                <div class="przyciski">
-                    <button class="przycisk2">Szukaj w Google</button>
-                    <button class="przycisk3">Szczęśliwy traf</button>
-                </div>
-            </div>
-        </div>
-<footer>
-      <div class="Polska">Polska</div>
-	  <div class="listek">
-                <a ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" class="liscimage">Neutralność węglowa od 2007 roku</a>
-            </div>
-      <div class="reflinki">
-            <div class="linki1">
-                <a>O nas</a>
-                <a>Reklamuj się</a>
-                <a >Dla firm</a>
-                <a >Jak działa wyszukiwarka</a>
-            </div>
-            <div class="linki2">
-                <a >Prywatność</a>
-                <a >Warunki</a>
-                <a >Ustawienia</a>
-            </div>
-        </div>
-    </footer>
-</div>
 
+            <ul class="optionsmenu2">
+                <li>Ustawienia</li>
+                <li>Narzędzia</li>
+            </ul>
+        </div>
+    </div>
+    <div id="searchresultsarea">
+        <p id="searchresultsnumber">Około 4,500,000 wyników (0.44 s) </p>
+        <div class="searchresult" style="margin-top:30px;">
+		<a href="#">
+			https://wynik.wyszukiwania.link.random.com<button>▼</button>
+            <h2 >Wynik wyszukiwania</h2></a>
+            
+		
+        <p>Opis wyniku idzie daleko az do drugiej linijki pokaz to jak idziesz do drugiej linii prosze bardzo</p>
+        </div>
+
+        <div class="searchresult">
+		<a href="#">
+			https://wynik.wyszukiwania.link.random.com<button>▼</button>
+            <h2 >Wynik wyszukiwania</h2></a>
+        <p>Opis wyniku idzie daleko az do drugiej linijki pokaz to jak idziesz do drugiej linii prosze bardzo</p>
+		</div>
+
+        <div class="searchresult">
+		<a href="#">
+			https://wynik.wyszukiwania.link.random.com<button>▼</button>
+            <h2 >Wynik wyszukiwania</h2></a>
+        <p>Opis wyniku idzie daleko az do drugiej linijki pokaz to jak idziesz do drugiej linii prosze bardzo</p>
+		</div>
+
+        <div class="searchresult">
+		<a href="#">
+			https://wynik.wyszukiwania.link.random.com<button>▼</button>
+            <h2 >Wynik wyszukiwania</h2></a>
+        <p>Opis wyniku idzie daleko az do drugiej linijki pokaz to jak idziesz do drugiej linii prosze bardzo</p>
+		</div>
+
+        <div class="searchresult">
+			<a href="#">
+			https://wynik.wyszukiwania.link.random.com<button>▼</button>
+            <h2 >Wynik wyszukiwania</h2></a>
+        <p>Opis wyniku idzie daleko az do drugiej linijki pokaz to jak idziesz do drugiej linii prosze bardzo</p>
+		</div>
+
+        <div class="searchresult">
+			<a href="#">
+			https://wynik.wyszukiwania.link.random.com<button>▼</button>
+            <h2 >Wynik wyszukiwania</h2></a>
+        <p>Opis wyniku idzie daleko az do drugiej linijki pokaz to jak idziesz do drugiej linii prosze bardzo</p>
+		</div>
+
+        <div class="searchresult">
+			<a href="#">
+			https://wynik.wyszukiwania.link.random.com<button>▼</button>
+            <h2 >Wynik wyszukiwania</h2></a>
+        <p>Opis wyniku idzie daleko az do drugiej linijki pokaz to jak idziesz do drugiej linii prosze bardzo</p>
+		</div>
+
+        <div class="searchresult">
+			<a href="#">
+			https://wynik.wyszukiwania.link.random.com<button>▼</button>
+            <h2 >Wynik wyszukiwania</h2></a>
+        <p>Opis wyniku idzie daleko az do drugiej linijki pokaz to jak idziesz do drugiej linii prosze bardzo</p>
+		</div>
+
+        <div class="relatedsearches">
+            <h3>Podobne wyszukiwania</h3>
+            <div class="relatedlists">
+                <ul class="relatedleft">
+                    <li>jakiś <b>wynik</b></li>
+                    <li><b>wynik</b> matura</li>
+                    <li><b>wynik</b> egzamin</li>
+                    <li><b>wynik</b> koronawirus</li>
+                </ul>
+                <ul class="relatedright">
+                    <li><b>wynik</b> w rankingach</li>
+                    <li>zły czy dobry <b>wynik</b></li>
+                    <li><b>wynik</b> pozytywny</li>
+                    <li><b>wynik</b> negatywny covid</li>
+                </ul>
+            </div>
+        </div>
+		
+		
+		<table>
+            <tr>
+              <td><span class="blue">G</span></td>
+              <td><span class="red">o</span></td>
+              <td><span class="yellow">o</span></td>
+              <td><span class="yellow">o</span></td>
+              <td><span class="yellow">o</span></td>
+              <td><span class="yellow">o</span></td>
+              <td><span class="yellow">o</span></td>
+              <td><span class="yellow">o</span></td>
+              <td><span class="yellow">o</span></td>
+              <td><span class="yellow">o</span></td>
+              <td><span class="yellow">o</span></td>
+              <td><span class="yellow">o</span></td>
+              <td><span class="blue">g</span></td>
+              <td><span class="green">l</span></td>
+              <td><span class="red">e</span></td>
+              <td rowspan="2" style="width: 10px;"></td>
+              <td><span class="blue"><i class="fas fa-angle-right" style="color:#4285f4; font-size:20px"></i></span></td>
+            </tr>
+            <tr>
+              <td class="pageNumber"></td>
+              <td class="pageNumber"></td>
+              <td class="pageNumber">1</td>
+              <td class="pageNumber">2</td>
+              <td class="pageNumber">3</td>
+              <td class="pageNumber">4</td>
+              <td class="pageNumber">5</td>
+              <td class="pageNumber">6</td>
+              <td class="pageNumber">7</td>
+              <td class="pageNumber">8</td>
+              <td class="pageNumber">9</td>
+              <td class="pageNumber">10</td>
+              <td colspan="3"></td>
+              <td class="pageNumber">Następna</td>
+            </tr>
+          </table>
+    </div>
+
+    <div id="footer">
+        <div id="footerlocation">
+            <p><span style="margin-right: 25px">Polska</span> <span class="footerborder"><span class="dot"></span></span> <span style="color: #3c4043;font-weight: bold;">Kraków</span>    &nbsp;
+			- Z twojego adresu internetowego - Użyj dokładnej lokalizacji - Dowiedz się więcej</p>
+        </div>
+		
+        <ul id="footermenu">
+            <li>Pomoc</li>
+            <li>Prześlij opinię</li>
+            <li>Prywatność</li>
+            <li>Warunki</li>
+        </ul>
+    </div>  
+	</div>
+	</body>
 </html>
