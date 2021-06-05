@@ -14,7 +14,7 @@
     </head>
 
 	<body>
-	<div id="app" :class="[googleSearch != '' ? 'results' : 'home']"> 
+	<div id="app" :class="[textSearch.length > 0 ? 'results' : 'home']"> 
       <nav>
       	<a href="#">Gmail</a>
       	<a href="#">Grafika</a>		
@@ -30,10 +30,19 @@
       	<img src="logo.png" class="logo">
       	<form><br><br>
       		<div class="search-box">
-      			<img src="lupa.png" class="search-icon">
-      			<input ref="inputFocus" v-model="googleSearch" type="text" class="search-input">
+			<div class="podpowiedzi">
+      			<img src="lupa.png" class="search-icon" @click="potwierdz">
+      			<input ref="inputFocus" v-model="googleSearch" type="text" class="search-input" @keyup.enter="potwierdz">
 				<img src="bartools.png" class="keyboard-icon">		
       			<img src="mic.png" class="voice-icon">
+				<div class="list">
+                  <ul v-for="miasto in filteredCities" @click="uzupelnij(miasto)">
+						<img class="ikonkaSearch" src="lupa.png" title="Szukaj">
+								{{googleSearch}}<b>{{ miasto.name.substring(googleSearch.length) }}</b>
+						</ul>
+				</div>
+
+			  </div>
       			<input type="submit" class="search-btn" value="Szukaj w google">
       			<input type="submit" class="search-btn" value="Szczęśliwy traf">
       		</div>
@@ -70,7 +79,7 @@
 	  
 	  <!-- WYNIKI -->	  
 	  
-	  <div id="header">
+	<div id="header">
         <div id="topbar">
             <img id="searchbarimage" src="logo.png" />
             <div id="searchbar" type="text">
@@ -123,14 +132,6 @@
     </div>
     <div id="searchresultsarea">
         <p id="searchresultsnumber">Około 4,500,000 wyników (0.44 s) </p>
-		<div class="vue-cities">
-			    <p>Miasta zawierające "{{ googleSearch }}":</p>
-                <ul>
-                    <li v-for="city in filteredCities">					
-						{{ city.name }}
-                    </li>
-                </ul>
-				</div>
         <div class="searchresult" style="margin-top:30px;">
 		<a href="#">
 			https://wynik.wyszukiwania.link.random.com<button>▼</button>
